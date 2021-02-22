@@ -117,6 +117,13 @@ USE_L10N = True
 
 USE_TZ = True
 
+# Settings used for production purposes
+
+SECURE_CONTENT_TYPE_NOSNIFF=True
+SECURE_SSL_REDIRECT=True
+SESSION_COOKIE_SECURE=True
+CSRF_COOKIE_SECURE=True
+X_FRAME_OPTIONS='DENY'
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
@@ -127,7 +134,7 @@ STATICFILES_DIRS = [
 ]
 
 # The absolute path to the directory where collectstatic will collect static files for deployment.
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_ROOT = os.path.join(MASTER_BASE_DIR, 'staticfiles')
 # STATIC_ROOT = BASE_DIR / 'staticfiles'
 
 # Simplified static file serving.
