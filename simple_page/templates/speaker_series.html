@@ -1,0 +1,159 @@
+{% extends "base.html" %}
+
+{% block title %}Alumni Speaker Series{% endblock %}
+{% block header %}
+{% load static %}
+<link href="{% static 'speaker_series.css' %}" rel="stylesheet" type="text/css">
+<script src="{% static 'speaker_series.js' %}" type="text/javascript"></script>
+{% endblock %}
+
+{% block page_content %}
+{% load static %}
+<img id="mobile_header_img" src="{% static 'alumni_speaker_series_header_mobile.png' %}" alt="Description of WiCS Alumni Speaker Series – The WiCS Alumni Speaker Series is a sequence of stellar workshops, community discussions, and presentations, featuring womxn-identifying Amherst alumni. Our speakers are involved in the tech industry and excited to share their knowledge and experiences with the budding new generation of technologists. We look forward to seeing you there! Due to Covid-19, these talks will be hosted on Zoom starting February 2021.">
+<div id="schedule">
+    <table class="month_events">
+        <tr>
+            <td colspan="2" class="month_icon">
+                <img src="{% static 'month_icons/february.png' %}" alt="February events icon">
+            </td>
+        </tr>
+        <tr class="date_location">
+            <td colspan="2">
+                <h2>
+                    Thursday, Feb. 25th @5pm EST | Hosted on Zoom
+                </h2>
+            </td>
+        </tr>
+        <tr class="mobile">
+            <td colspan="2">
+                <div class="event_title">
+                    <h1>Things I Wish I’d Known When I Started In Tech</h1>
+                </div>
+            </td>
+        </tr>
+        <tr class="event_info" id="beth">
+            <td class="pic_pronouns_link">
+                <img src="{% static 'profile_pics/alum_1.png' %}" alt="Profile picture of featured speaker, Beth">
+                <h3>
+                    Beth Linker '98<br>
+                    <div class="pronouns">they/them</div>
+                </h3>
+                <h3 class="link">
+                    &#128105;&#8205;&#128187;
+                    <a href="http://linkedin.com/in/blinker">linkedin.com/in/blinker</a>
+                </h3>
+            </td>
+            <td class="event_title_description">
+                <div class="event_title">
+                    <h1>Things I Wish I’d Known When I Started In Tech</h1>
+                </div>
+                <h3 class="event_description">
+                    Considering going into tech? Join us in this special presentation by Beth to hear their thoughts on planning (and not planning!) a career in the tech industry.
+                </h3>
+                <span><a class="btn" href="https://forms.gle/pBzriEzAmiigEt7c8">REGISTER</a></span>
+            </td>
+        </tr>
+    </table>
+
+    <table class="month_events two_speakers">
+        <tr>
+            <td colspan="3" class="month_icon">
+                <img src="{% static 'month_icons/march.png' %}" alt="March events icon">
+            </td>
+        </tr>
+        <tr class="date_location">
+            <td colspan="3">
+                <h2>
+                    Thursday, Mar. 25th @5pm EST | Hosted on Zoom
+                </h2>
+            </td>
+        </tr>
+        <tr class="mobile">
+            <td colspan="3">
+                <div class="event_title">
+                    <h1>A Discussion with Product Managers</h1>
+                </div>
+            </td>
+        </tr>
+        <tr class="event_info">
+            <td class="pic_pronouns_link">
+                <img src="{% static 'profile_pics/alum_2.png' %}" alt="Profile picture of featured speaker, Deb">
+                <h3>
+                    Deb Holmes '91<br>
+                    <div class="pronouns">she/her</div>
+                </h3>
+                <h3 class="link">
+                    &#128105;&#8205;&#128187;
+                    <a href="http://www.linkedin.com/in/deb-holmes">linkedin.com/in/d...</a>
+                </h3>
+            </td>
+            <td class="pic_pronouns_link">
+                <img src="{% static 'profile_pics/alum_3.png' %}" alt="Profile picture of featured speaker, Alicia">
+                <h3>
+                    Alicia Bassolino '05<br>
+                    <div class="pronouns">she/her</div>
+                </h3>
+                <h3 class="link">
+                    &#128105;&#8205;&#128187;
+                    <a href="https://www.linkedin.com/in/alicia-b-0758564/">linkedin.com/in/al...</a>
+                </h3>
+            </td>
+            <td class="event_title_description">
+                <div class="event_title">
+                    <h1>A Discussion with Product Managers</h1>
+                </div>
+                <h3 class="event_description">
+                    As womxn in a male-dominated industry, Deb and Alicia have much experience in overcoming extra obstacles, as well as the competition to be taken seriously, to stand out, and succeed. Come listen as they speak on their hard-earned knowledge, as well as the details in how Amherst has prepared them for life in product management and software engineering.
+                    <span><a class="btn" href="https://forms.gle/pBzriEzAmiigEt7c8">REGISTER</a></span>
+                </h3>
+            </td>
+        </tr>
+    </table>
+
+
+    <table class="month_events">
+        <tr>
+            <td colspan="2" class="month_icon">
+                <img src="{% static 'month_icons/april.png' %}" alt="April events icon">
+            </td>
+        </tr>
+        <tr class="date_location">
+            <td colspan="2">
+                <h2>
+                    Friday, Apr. 30th @5pm EST | Hosted on Zoom
+                </h2>
+            </td>
+        </tr>
+        <tr class="mobile">
+            <td colspan="2">
+                <div class="event_title">
+                    <h1>Let's Talk About Research!</h1>
+                </div>
+            </td>
+        </tr>
+        <tr class="event_info" id="marissa">
+            <td class="pic_pronouns_link">
+                <img src="{% static 'profile_pics/alum_4.png' %}" alt="Profile picture of featured speaker, Marissa">
+                <h3>
+                    Marissa Radensky '19<br>
+                    <div class="pronouns">she/her</div>
+                </h3>
+                <h3 class="link">
+                    &#128105;&#8205;&#128187;
+                    <a href="https://www.linkedin.com/mwlite/in/marissa-radensky-51115a100">linkedin.com/in/marissa-radens...</a>
+                </h3>
+            </td>
+            <td class="event_title_description">
+                <div class="event_title">
+                    <h1>Let's Talk About Research!</h1>
+                </div>
+                <h3 class="event_description">
+                    Early in her time at Amherst, Marissa fell in love with computer science and has since found her calling in research. Come hear how she has continued down this path to where she is now, studying human-computer interaction (HCI) for her PhD at the University of Washington. Her current research focuses on how to help end users understand when and when not to trust intelligent systems.
+                    <br><br>Join us as we learn more about her research and experiences along the way, from UMass Amherst, to Carnegie Mellon, and even abroad to Singapore!
+                    <span><a class="btn" href="https://forms.gle/pBzriEzAmiigEt7c8">REGISTER</a></span>
+                </h3>
+            </td>
+        </tr>
+    </table>
+</div>
+{% endblock %}

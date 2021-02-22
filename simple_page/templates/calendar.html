@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+
+{% block title %} Calendar {% endblock %}
+{% block header %}
+{% load static %}
+<link href="{% static '/gcal_flow_3.0.2/jquery.gcal_flow.css' %}" rel="stylesheet" type="text/css">
+<link href="{% static 'calendar.css' %}" rel="stylesheet" type="text/css">
+
+{% endblock %}
+
+{% block page_content %}
+<div id="gcf-design">
+    <div class="gcf-item-container-block">
+        <div class="gcf-item-block">
+            <div class="gcf-item-date-block">
+                <h2 class=" gcf-item-daterange"></h2>
+                <h2>|</h2>
+                <h2 class="gcf-item-location"></h2>
+            </div>
+            <div class="gcf-item-title-block">
+                <h1 class="gcf-item-title"></h1>
+            </div>
+            <div class="gcf-item-body-block">
+                <h3 class="gcf-item-description">No description available</h3>
+            </div>
+            <a class='collapseLink'>See more</a>
+        </div>
+    </div>
+    <div class="gcf-last-update-block">
+        LastUpdate: <span class="gcf-last-update"></span>
+    </div>
+</div>
+
+<div id="submitEventBlock">
+    If there are any events you would like us to host or feature in our Tech Checks newsletter, please submit your event at the link below!
+    <br><a class="btn" href="https://forms.gle/v63rb9rzqaV5q33g6">SUBMIT</a>
+</div>
+
+<script src="https://apis.google.com/js/api.js"></script>
+<script>
+    _gCalFlow_debug = true
+</script>
+{% load static %}
+<script src="{% static '/gcal_flow_3.0.2/jquery.gcal_flow.js' %}" type="text/javascript"></script>
+<script src="{% static 'calendar.js' %}" type="text/javascript"></script>
+
+{% endblock %}

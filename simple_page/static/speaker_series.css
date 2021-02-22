@@ -1,0 +1,182 @@
+body {
+    color: #6e6e6e;
+}
+#schedule {
+    position: relative;
+    top: 5vh;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-bottom: 10vh;
+}
+td {
+    display: inline-block;
+}
+#mobile_header_img {
+    width: 100vw;
+    height: auto;
+}
+.month_events {
+    width: 90vw;
+    margin-bottom: 5vh;
+}
+.month_icon {
+    border-bottom: lightgray 1px solid;
+    padding-bottom: 2vmin;
+    padding-top: 4vmin;
+}
+.month_icon img{
+    width: 20vmin;
+    height: auto;
+}
+h2 {
+    font-size: 3vh;
+    line-height: 140%;
+    font-weight: bold;
+}
+h3 {
+    font-size: 2.5vh;
+    line-height: 140%;
+}
+h1 {
+    font-size: 4vmin;
+}
+.date_location h2 {
+    padding-top: 2vh;
+    padding-left: 0;
+    text-align: justify;
+    font-size: 2vmax;
+}
+.event_title {
+    width: 100%;
+    background-color: #EAE4F2;
+    text-align: center;
+    color: #242254;
+    padding: 1vh;
+}
+.event_title_description .event_title {
+    display: none;
+}
+.event_title_description {
+    vertical-align: top;
+    position: relative;
+}
+.pic_pronouns_link {
+    text-align: center;
+}
+.pic_pronouns_link h3 {
+    font-weight: bold;
+    background-color: #EAE4F2;
+    color: #242254;
+}
+.pic_pronouns_link img {
+    margin-bottom: 1vh;
+}
+.pronouns {
+    font-size: 80%;
+    font-weight: normal;
+    color: #6e6e6e;
+}
+.pic_pronouns_link h3:nth-of-type(2) {
+    background-color: #f6f6f6;
+    text-align: left;
+    padding: 1vh 1vw;
+}
+.pic_pronouns_link a {
+    font-size: 80%;
+    color: #6e6e6e;
+    font-weight: normal;
+}
+.event_title_description span {
+    position: absolute;
+    left: 0;
+}
+.event_description {
+    padding-top: 2vh;
+    text-align: justify;
+}
+.btn {
+    /*vertical-align: top;*/
+    background-color: #d9eeef;
+    color: #242254;
+    border: #242254 0.1vmin solid;
+    font-weight: bold;
+    padding: 0.5vh 1.5vw;
+    font-size: 2.5vmin;
+}
+.pic_pronouns_link {
+    width: 90vw;
+    padding: 0;
+}
+.pic_pronouns_link img {
+    width: 60vw;
+    margin-top: 1vh;
+}
+.event_title_description span {
+    bottom: -5vh;
+}
+.mobile .event_title {
+    width: 90vw;
+}
+
+/* For non mobile devices */
+@media only screen and (min-width: 1150px) {
+    .mobile {
+        display: none;
+    }
+    .event_title_description .event_title {
+        display: block;
+    }
+    td {
+        display: table-cell;
+    }
+    .pic_pronouns_link {
+        width: 30vw;
+        padding: 0 4vw;
+    }
+    .pic_pronouns_link img {
+        width: 15vw;
+    }
+    .event_title_description span {
+        bottom: 1vh;
+    }
+    .date_location h2{
+        padding-left: 4.5vw;
+        font-size: 3vh;
+    }
+    .two_speakers .pic_pronouns_link {
+        width: 20vw;
+    }
+    .two_speakers .pic_pronouns_link img {
+        width: 14vw;
+    }
+    .two_speakers .pic_pronouns_link:nth-of-type(1) {
+        padding-right: 2vw;
+    }
+    .two_speakers .pic_pronouns_link:nth-of-type(2) {
+        padding-left: 2vw;
+    }
+    .event_title_description {
+        padding-right: 4vw;
+    }
+    .month_icon img {
+        width: 10vw;
+    }
+    body{
+        /*background-image: url("alumni_speaker_series_header.png");*/
+        background-position: top;
+        background-size: 100vw 100vh;
+        background-repeat: no-repeat;
+    }
+    #schedule {
+        top: 108vh;
+    }
+    #mobile_header_img {
+        display: none;
+    }
+    #beth .btn {
+        margin-bottom: 53%;
+    }
+    #marissa .btn {
+        margin-bottom: -50%;
+    }
+}

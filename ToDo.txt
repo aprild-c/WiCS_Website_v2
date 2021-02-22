@@ -1,0 +1,26 @@
+Home
+– Use a higher quality gif
+– Stop the height of the #supportingText from changing as you select different tabs
+
+Meet Our E-Board
+– Fix the white space that appears on the right when page is viewed on mobile phones
+– Alternate the image and bio horizontally in the #EBoard table
+– Implement database
+
+Showcase Projects
+- Make a page to showcase club projects and members research and tech projects
+– Implement Database
+
+Speaker Series
+– Design a better background image for the page
+– Find a way to fill in the awkward empty space in the rows with the calendar image
+– Implement Database
+– Replace text in header image with html text
+
+Calendar
+– Display a monthly calendar
+– Stop calendar from automatically scrolling
+General
+– Create a cooler loader
+– Put more photos throughout the site
+– Create a js function in base.js that handles the loader feature for every page

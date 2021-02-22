@@ -1,0 +1,102 @@
+{% extends "base.html" %}
+
+{% block title %} Home {% endblock %}
+{% block header %}
+{% load static %}
+<link href="{% static 'home.css' %}" rel="stylesheet" type="text/css">
+<script src="{% static 'home.js' %}" type="text/javascript"></script>
+{% endblock %}
+
+{% block page_content %}
+{% load static %}
+<img id='home_header' src="{% static 'home_header.gif' %}" alt="Women in Computer Science. Women who code write the future. Image of club members.">
+<img id='mobile_home_header' src="{% static 'mobile_home_header.gif' %}" alt="Women in Computer Science. Women who code write the future. Image of club members.">
+<div id="mission">
+    <h1>Our Mission</h1>
+    <h2>
+        Our mission is to foster a community at Amherst College where womxn can feel seen, connected, and supported in their pursuits of technology and computer science.
+    </h2>
+</div>
+<table id="what_we_do">
+    <tr>
+        <td colspan="3">
+            <h1>What Do We Do?</h1>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="3">
+            <h2 class="text">
+                At WiCS, we aim to strengthen and enrich our community in both the practical and the social aspects of tech.
+            </h2>
+        </td>
+    </tr>
+    <tr id="descriptions">
+        <td>
+            <img src="{% static 'workshop_icon.png' %}" alt="Workshops icon image">
+            <div class="text">
+                <h2>Workshops</h2>
+                <h3>
+                    Our events involve workshops built towards improving technical skills, as well as opportunities to educate our members on the obstacles that face womxn today.
+                </h3>
+            </div>
+        </td>
+        <td>
+            <img src="{% static 'conferences_icon.png' %}" alt="Tech conferences icon image">
+            <div class="text">
+                <h2>Tech Conferences</h2>
+                <h3>
+                    Recurring events we organize include trips to tech conferences for our students, including the Grace Hopper Celebration and the WeCode tech conferences.
+                </h3>
+            </div>
+        </td>
+        <td>
+            <img src="{% static 'speaker_series_icon.png' %}" alt="WiCS Alumni Speaker Series icon image">
+            <div class="text">
+                <h2>WiCS Alumni Speaker Series</h2>
+                <h3>
+                    And, most notably, we have our annual WiCS Alumni Speaker Series, where we feature Amherst alumni to discuss their experiences as womxn in tech post-graduation.
+                </h3>
+            </div>
+        </td>
+    </tr>
+</table>
+<table id="tab_module">
+    <tr id="header_row">
+        <th class="header">
+            <a><h1>Why Do We Do It?</h1></a>
+        </th>
+        <th class="header">
+            <a><h1>Womxn vs Women</h1></a>
+        </th>
+    </tr>
+    <tr>
+        <td colspan="2" id="supportingText">
+            <h3>
+                There is a severe lack of womxn’s representation in STEM fields, especially in tech. In the US, womxn only comprise 18% of the degrees earned in computer science; men comprise the remaining 82%. By missing one-half of the population, companies lose the potential for groundbreaking, out-of-the-box innovations. Moreover, certain issues are not seen, let alone solved. (For example, Apple’s Health app didn’t have the ability to track menstruation for an entire year!)
+                <br><br>The lack of gender diversity in the workplace—and thus in products—begins in the classroom. Most colleges boast a 50-50 ratio in the overall student demographic, and introductory courses for computer science commonly reflect this even ratio. However, it becomes troublingly skewed in higher-level courses. This low retention rate can be attributed to multiple reasons, including a lack of womxn role models in technology, a confidence gap between genders, and gender stereotypes (such as the male geek-programmer). The low-retention-rate phenomenon is so prevalent that it has been coined the “leaky pipeline.”
+                <br><br>Evidently, womxn in tech need to be supported, and WiCS serves to do so at the root: college.<br><br>
+                <span id="citations">
+                    <a href="https://www.techrepublic.com/article/the-state-of-women-in-computer-science-an-investigative-report/">TechRepublic: The State of Women in Computer Science</a><br>
+                    <a href="https://www.npr.org/sections/alltechconsidered/2016/12/21/505864391/why-arent-there-more-women-in-tech-a-tour-of-silicon-valleys-leaky-pipeline">NPR: Why Aren’t There More Women in Tech?</a><br>
+                    <a href="https://www.theverge.com/2014/9/25/6844021/apple-promised-an-expansive-health-app-so-why-cant-i-track">Verge: Apple promised an expansive health app, so why can’t I track menstruation?</a>
+                </span>
+            </h3>
+        </td>
+    </tr>
+</table>
+<div id="revamp_team_shoutout">
+    <div class="text">
+        <h1>Like the website?</h1>
+        <h2>Over winter break, the WiCS website had the ultimate revamp! Five of our WiCS members undertook this endeavor to design, write, and build the site!</h2>
+        <img class="mobile" src="{% static 'website_revamp_team.png' %}" alt="image of people who worked on the the website revamp project">
+
+        <br>
+        <h3>Web Design Team: April Dottin-Carter, Naila Thevenot, Skye Wu, and Karen Liu<br>
+            Content Writing Team: Karen Liu and Hope Tsai<br>
+            Project Manager and Web Developer: April Dottin-Carter<br>
+        </h3>
+    </div>
+    <img class="desktop" src="{% static 'website_revamp_team.png' %}" alt="image of people who worked on the the website revamp project">
+</div>
+
+{% endblock %}

@@ -1,0 +1,311 @@
+{% extends "base.html" %}
+
+{% block title %} Meet Our E-Board {% endblock %}
+{% block header %}
+{% load static %}
+<link href="{% static 'eboard.css' %}" rel="stylesheet" type="text/css">
+<script src="{% static 'eboard.js' %}" type="text/javascript"></script>
+{% endblock %}
+
+{% block page_content %}
+<table id="landing_section">
+    <tr>
+        <td colspan="3">
+            {% load static %}
+            <img src="{% static 'meet_our_e-board_header.png' %}" id="header_img">
+        </td>
+    </tr>
+    <tr>
+        <td colspan="3"></td>
+    </tr>
+    <tr id="page_description_section">
+        <td>
+
+            {% load static %}
+            <img src="{% static 'pink_wavy_line.png' %}" class="line_img">
+        </td>
+        <td>
+            <h2>
+                Our wonderful E-Board members form the backbone of this effort to foster community for womxn in tech. Keep
+                reading to learn how our president, April, revived the club as a first-year at Amherst, and to meet the rest of
+                the E-Board!
+            </h2>
+            {% load static %}
+            <img src="{% static 'all_hands_in.gif' %}" id="gif">
+        </td>
+        <td>
+            {% load static %}
+            <img src="{% static 'pink_wavy_line.png' %}" class="flipped line_img">
+        <td>
+    </tr>
+    <tr>
+        <td colspan="3"></td>
+    </tr>
+</table>
+<table id="e-board_roster">
+    <tr>
+        <td class="profile_smaller_section left_col">
+            <img src="{% static '/profile_pics/president.png' %}" alt="profile picture of club president">
+            <h3>
+                &#9993;&#65039;
+                <a href="mailto:adottincarter23@amherst.edu">adottincarter23@amherst.edu</a>
+            </h3>
+            <h3>
+                &#128105;&#8205;&#128187;
+                <a href="https://www.linkedin.com/in/aprildottincarter/">linkedin.com/in/aprildottincarter</a>
+            </h3>
+        </td>
+        <td class="profile_bigger_section">
+            <img src="{% static '/profile_pics/president.png' %}" alt="profile picture of club president">
+            <h2>
+                April Dottin-Carter '23 <br>
+                <div class="role">President</div>
+            </h2>
+            <h3>
+                <div class="pronouns">she/her</div>
+                I believe that when people with strong, positive morals and diverse backgrounds come together to create the world’s future
+                technologies, the impact of tech is able to reach more communities and push us in the right direction
+                towards global equality. Midway through my first year at Amherst, I took the initiative in reviving
+                Amherst’s Womxn in Computer Science Club in order to create a powerful and supported community for
+                fellow students who are womxn interested in computer science.<br><br>
+                Outside of school and WiCS, I enjoy cooking vegetarian dishes, binge-watching reality shows, and reading
+                my daily horoscope (I’m a Taurus). As for my future, I am an aspiring frontend web developer, and I plan
+                to permanently move out of America and onto the road in an intricate and beautiful tiny house.<br><br>
+                Cheers to a bright future for WiCS!
+            </h3>
+        </td>
+        <td class="profile_smaller_section right_col">
+            <img src="{% static '/profile_pics/president.png' %}" alt="profile picture of club president">
+            <h3>
+                &#9993;&#65039;
+                <a href="mailto:adottincarter23@amherst.edu">adottincarter23@amherst.edu</a>
+            </h3>
+            <h3>
+                &#128105;&#8205;&#128187;
+                <a href="https://www.linkedin.com/in/aprildottincarter/">linkedin.com/in/aprildottincarter</a>
+            </h3>
+        </td>
+    </tr>
+    <tr>
+        <td class="profile_smaller_section left_col" style="width: 20vw">
+            <img src="{% static '/profile_pics/secretary_treasurer.png' %}" alt="profile picture of club secretary/treasurer">
+            <h3>
+                &#9993;&#65039;
+                <a href="mailto:klliu23@amherst.edu">klliu23@amherst.edu</a>
+            </h3>
+        </td>
+        <td class="profile_bigger_section">
+            <img src="{% static '/profile_pics/secretary_treasurer.png' %}" alt="profile picture of club secretary/treasurer">
+            <h2>
+                Karen Liu '23 <br>
+                <div class="role">Secretary and Treasurer</div>
+            </h2>
+            <h3>
+                <div class="pronouns">she/her</div>
+                Hi there! My name is Karen Liu, and I’m currently a sophomore statistics major. In the spirit of liberal arts discipline-blending, my specific interests lie in data science—I’m particularly curious to learn more about the field’s usage of neural networks, among other interactions with deep learning and AI.<br><br>
+                Some lighter, more recreational things I enjoy in my spare time include creative writing, sci-fi podcasts, playlists, art, and constantly cleaning my mysteriously entropic room. Here’s to hoping for everyone a wonderful experience in WiCS!
+            </h3>
+        </td>
+        <td class="profile_smaller_section right_col">
+            <img src="{% static '/profile_pics/secretary_treasurer.png' %}" alt="profile picture of club secretary/treasurer">
+            <h3>
+                &#9993;&#65039;
+                <a href="mailto:klliu23@amherst.edu">klliu23@amherst.edu</a>
+            </h3>
+
+        </td>
+    </tr>
+    <tr>
+        <td class="profile_smaller_section left_col">
+            <img src="{% static '/profile_pics/events_manager.png' %}" alt="profile picture of club events manager">
+            <h3>
+                &#9993;&#65039;
+                <a href="mailto:aychang23@amherst.edu">aychang23@amherst.edu</a>
+            </h3>
+            <h3>
+                &#128105;&#8205;&#128187;
+                <a href="https://www.linkedin.com/in/ashley-chang-869441187/">linkedin.com/in/ashley-chang-869441187</a>
+            </h3>
+        </td>
+        <td class="profile_bigger_section">
+            <img src="{% static '/profile_pics/events_manager.png' %}" alt="profile picture of club events manager">
+            <h2>
+                Ashley Chang '23 <br>
+                <div class="role">Events Manager</div>
+            </h2>
+            <h3>
+                <div class="pronouns">she/her</div>
+                Hi, my name is Ashley! I’m the event manager for WiCS and a sophomore math major from New Jersey. While I’ve only taken the intro CS courses at Amherst and self-studied a data structures course, I was inspired to join WiCS from having led a women-in-STEM club in my high school.<br><br>
+                As an event manager, I get to send regular opportunities for hackathons, webinars, or applications to our roster, and love being able to connect with everyone in this way. There are plenty of areas for support as a female student studying computer science, and I am happy to help make this club one of them!
+            </h3>
+        </td>
+        <td class="profile_smaller_section right_col">
+            <img src="{% static '/profile_pics/events_manager.png' %}" alt="profile picture of club events manager">
+            <h3>
+                &#9993;&#65039;
+                <a href="mailto:aychang23@amherst.edu">aychang23@amherst.edu</a>
+            </h3>
+            <h3>
+                &#128105;&#8205;&#128187;
+                <a href="https://www.linkedin.com/in/ashley-chang-869441187/">linkedin.com/in/ashley-chang-869441187</a>
+            </h3>
+        </td>
+    </tr>
+    <tr>
+        <td class="profile_smaller_section left_col">
+            <img src="{% static '/profile_pics/social_media_manager.png' %}" alt="profile picture of club social media manager">
+            <h3>
+                &#9993;&#65039;
+                <a href="mailto:dvu24@amherst.edu">dvu24@amherst.edu</a>
+            </h3>
+            <h3>
+                &#128105;&#8205;&#128187;
+                <a href="https://www.linkedin.com/in/danicavu/">linkedin.com/in/danicavu</a>
+            </h3>
+        </td>
+        <td class="profile_bigger_section">
+            <img src="{% static '/profile_pics/social_media_manager.png' %}" alt="profile picture of club social media manager">
+            <h2>
+                Danica Vu '24 <br>
+                <div class="role">Social Media Manager</div>
+            </h2>
+            <h3>
+                <div class="pronouns">she/her</div>
+                Hi! I’m Danica and I'm the Social Media Manager for WiCS! I’m a freshman from NYC, majoring in Econ and maybe Compsci or Math. I'm particularly interested in game theory and its applications in development economics as well as educational investments in developing countries.<br><br>
+                Outside of school, my interests include art museums, music, and foreign languages. In my free time, I enjoy late night drives, running, baking, and doing NYT crossword puzzles. I’m so excited for this upcoming semester with WiCS!
+            </h3>
+        </td>
+        <td class="profile_smaller_section right_col">
+            <img src="{% static '/profile_pics/social_media_manager.png' %}" alt="profile picture of club social media manager">
+            <h3>
+                &#9993;&#65039;
+                <a href="mailto:dvu24@amherst.edu">dvu24@amherst.edu</a>
+            </h3>
+            <h3>
+                &#128105;&#8205;&#128187;
+                <a href="https://www.linkedin.com/in/danicavu/">linkedin.com/in/danicavu</a>
+            </h3>
+        </td>
+    </tr>
+</table>
+<table id="alumni_outreach_team">
+    <tr>
+        <th colspan="3"><h2>Alumni Outreach Team</h2></th>
+    </tr>
+    <tr>
+        <td class="outreach_team_member">
+            <div class="profile_smaller_section">
+                <img src="{% static '/profile_pics/alum_outreach_team_1.png' %}" alt="profile picture of alum outreach team member">
+            </div>
+            <h2>
+                Claire Jensen '24 <br>
+            </h2>
+            <h3>
+                <div class="pronouns">she/her</div>
+                I am a first-year prospective computer science, geology, and logic major at Amherst College. I am
+                involved in WiCS as an Alumni Outreach Team member, as well as the
+                college’s soccer, ultimate frisbee, and Black Student Union clubs. <br><br>Previously, I have interned at Amazon
+                and SPS Commerce, and I enjoyed working in software development and database engineering. In the future,
+                I want to travel in a van and work remotely as an ethical hacker.
+            </h3>
+            <div class="profile_smaller_section mobile">
+                <h3>
+                    &#9993;&#65039;
+                    <a href="mailto:cjensen24@amherst.edu">cjensen24@amherst.edu</a>
+                </h3>
+                <h3>
+                    &#128105;&#8205;&#128187;
+                    <a href="https://www.linkedin.com/in/cjense/">linkedin.com/in/cjense</a>
+                </h3>
+            </div>
+        </td>
+        <td class="outreach_team_member">
+            <div class="profile_smaller_section">
+                <img src="{% static '/profile_pics/alum_outreach_team_2.png' %}" alt="profile picture of alum outreach team member">
+            </div>
+            <h2>
+                Sophie Laurence '24<br>
+            </h2>
+            <h3>
+                <div class="pronouns">she/her</div>
+                Hey there! My name is Sophie Laurence, I am a French-Korean freshman from Cambridge MA. Always having been an avid player of video games, I started coding through Girls Who Code in 8th grade, and have been keeping it going ever since.<br><br>
+                Alongside my passion for writing and my interest in government technology, I am a prospective Political and Computer Science double major, and am currently participating in WiCS as part of the Alumni Outreach Team!
+            </h3>
+            <div class="profile_smaller_section mobile">
+                <h3>
+                    &#9993;&#65039;
+                    <a href="mailto:slaurence24@amherst.edu">slaurence24@amherst.edu</a>
+                </h3>
+                <h3>
+                    &#128105;&#8205;&#128187;
+                    <a href="https://www.linkedin.com/in/sophie-laurence-830122148/">linkedin.com/in/sophie-laurence-830122148</a>
+                </h3>
+            </div>
+        </td>
+        <td class="outreach_team_member">
+            <div class="profile_smaller_section">
+                <img src="{% static '/profile_pics/alum_outreach_team_3.png' %}" alt="profile picture of alum outreach team member">
+            </div>
+            <h2>
+                Tina Zhang '24<br>
+            </h2>
+            <h3>
+                <div class="pronouns">she/her</div>
+                Hi, I'm Tina and I'm currently a Freshman at Amherst College. I am interested in the
+                intersection between technology and art, but thanks to the Amherst Curriculum, I am currently exploring a much wider range of majors. <br><br>
+                So far, being a part of WiCS allowed me to more easily connect to my female classmates in computer science, and learn first hand
+                from our alumni in different fields of technology. Aside from CS, I enjoy painting,
+                cooking ramen with my friends, watching anime, and snowboarding.
+            </h3>
+            <div class="profile_smaller_section mobile">
+                <h3>
+                    &#9993;&#65039;
+                    <a href="mailto:szhang24@amherst.edu">szhang24@amherst.edu</a>
+                </h3>
+                <h3>
+                    &#128105;&#8205;&#128187;
+                    <a href="https://www.linkedin.com/in/tina-zhang-585b281b8/">linkedin.com/in/tina-zhang-585b281b8</a>
+                </h3>
+            </div>
+        </td>
+    </tr>
+    <tr class="outreach_team_email_links_row">
+        <td>
+            <div class="profile_smaller_section">
+                <h3>
+                    &#9993;&#65039;
+                    <a href="mailto:cjensen24@amherst.edu">cjensen24@amherst.edu</a>
+                </h3>
+                <h3>
+                    &#128105;&#8205;&#128187;
+                    <a href="https://www.linkedin.com/in/cjense/">linkedin.com/in/cjense</a>
+                </h3>
+            </div>
+        </td>
+        <td>
+            <div class="profile_smaller_section">
+                <h3>
+                    &#9993;&#65039;
+                    <a href="mailto:slaurence24@amherst.edu">slaurence24@amherst.edu</a>
+                </h3>
+                <h3>
+                    &#128105;&#8205;&#128187;
+                    <a href="https://www.linkedin.com/in/sophie-laurence-830122148/">linkedin.com/in/sophie-laurence-830122148</a>
+                </h3>
+            </div>
+        </td>
+        <td>
+            <div class="profile_smaller_section">
+                <h3>
+                    &#9993;&#65039;
+                    <a href="mailto:szhang24@amherst.edu">szhang24@amherst.edu</a>
+                </h3>
+                <h3>
+                    &#128105;&#8205;&#128187;
+                    <a href="https://www.linkedin.com/in/tina-zhang-585b281b8/">linkedin.com/in/tina-zhang-585b281b8</a>
+                </h3>
+            </div>
+        </td>
+    </tr>
+</table>
+{% endblock %}
