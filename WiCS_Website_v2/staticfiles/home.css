@@ -1,0 +1,199 @@
+body {
+    /*background-image: url("pink_speckles.png");*/
+    background-position: top;
+    background-repeat: repeat;
+    text-align: center;
+    align-content: center;
+}
+h1 {
+    text-transform: uppercase;
+    border-bottom: #6e6e6e solid 0.3vw;
+    font-weight: bold;
+    padding-bottom: 1vw;
+    width: fit-content;
+    margin-bottom: 3vh;
+    font-size: 4vmin;
+}
+h2 {
+    font-size: 2.5vmin;
+    font-weight: bold;
+}
+h3 {
+    font-size: 2.5vmin;
+}
+b {
+    color: #5c5c5c;
+}
+#mission, #what_we_do, #revamp_team_shoutout {
+    margin: 0 15vw 10vh 15vw;
+}
+#home_header {
+    width: 100vw;
+    height: auto;
+    top: 0;
+    left: 0;
+    display: none;
+}
+#mobile_home_header {
+    width: 43vmax;
+    text-align: center;
+}
+#mission, #what_we_do {
+    text-align: left;
+}
+#mission h1 {
+    color: #8c9efd;
+    border-bottom-color: #8c9efd;
+}
+#mission {
+    background-color: rgb(234, 228, 242);
+    padding: 5vh 2vw;
+}
+#what_we_do h1 {
+    color: #ff83a8;
+    border-bottom-color: #ff83a8;
+}
+#what_we_do h1,#what_we_do h2{
+    margin-left: 2vw;
+}
+h2 {
+    margin-bottom: 0;
+}
+#descriptions td {
+    border-left: transparent solid 2vw;
+    border-right: transparent solid 2vw;
+    height: min-content;
+}
+#descriptions img {
+    width: 12vw;
+    height: auto;
+    position: relative;
+    top: 6vw;
+}
+#descriptions h2 {
+    color: #ff83a8;
+}
+#descriptions h3, #revamp_team_shoutout h3 {
+    font-size: smaller;
+}
+#descriptions .text {
+    background-color: rgb(219, 238, 246);
+    padding: 8vw 1vw 3vw 1vw;
+}
+
+
+
+.header {
+    border-top-right-radius: 3vw;
+    border-top-left-radius: 3vw;
+    text-align: center;
+}
+.header h1 {
+    color: #ff83a8;
+    border-bottom-color: transparent;
+    margin-bottom: -0.2vh;
+    border-top-right-radius: 1vw;
+    border-top-left-radius: 1vw;
+    padding: 2vh 5vw 0 5vw;
+    width: revert;
+
+}
+.header h1:hover {
+    cursor: pointer;
+}
+.header:nth-of-type(1) h1 {
+    background-color: #eae4f2;
+
+}
+.header:nth-of-type(2) h1 {
+    background-color: #dbeef6;
+}
+#supportingText {
+    background-color: #eae4f2;
+    text-align: justify;
+    padding: 7vh 10vw;
+    width: 100vw;
+}
+#citations a {
+    font-size: smaller;
+}
+#revamp_team_shoutout {
+    margin-top: 10vh;
+}
+#revamp_team_shoutout .text {
+    text-align: left;
+    padding-top: 15vh;
+    padding-right: 2vw;
+}
+#revamp_team_shoutout h1 {
+    color: #8c9efd;
+    border-bottom-color: transparent;
+    text-transform: none;
+    font-size: 4.5vmin;
+    margin-bottom: 0;
+}
+#revamp_team_shoutout img {
+    vertical-align: top;
+}
+
+#what_we_do td {
+    display: block;
+}
+#what_we_do h3 {
+    margin: 1vh 2vw
+}
+#revamp_team_shoutout .desktop {
+    display: none;
+}
+#revamp_team_shoutout .mobile {
+    text-align: center;
+    margin: 3vh 0;
+}
+/* For non mobile devices */
+@media only screen and (min-width: 1150px) {
+    #mobile_home_header {
+        display: none;
+    }
+    #home_header {
+        display: block;
+    }
+    #mission, #what_we_do {
+        text-align: center;
+    }
+    #mission h1 {
+        margin-left: 40%;
+    }
+    #what_we_do h1 {
+        margin-left: 37%;
+    }
+    #what_we_do h2{
+        margin-left: 0;
+    }
+    #what_we_do td {
+        display: revert;
+    }
+    #what_we_do h3 {
+        margin: 0
+    }
+    .header h1 {
+        width: max-content;
+    }
+    .header:nth-of-type(1) h1 {
+        margin-left: 18vw;
+        margin-right: 0;
+    }
+    .header:nth-of-type(2) h1 {
+        margin-left: 0;
+        margin-right: 16vw;
+    }
+    #revamp_team_shoutout .text, #revamp_team_shoutout img{
+        display: inline-block;
+        width: 34vw;
+    }
+    #revamp_team_shoutout .mobile {
+        display: none;
+    }
+    #revamp_team_shoutout .desktop {
+        display: inline-block;
+    }
+}
