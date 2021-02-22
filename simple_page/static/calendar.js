@@ -43,6 +43,7 @@ function showPage() {
     document.getElementById("loader").style.display = "none";
     document.getElementById("pageContent").style.display = "block";
     document.body.style.backgroundImage = "url(../static/calendar_background.png)";
+    document.body.style.backgroundColor = "#dbeef6";
 }
 window.onload = function() {
     let loader = setTimeout(showPage, 3000);
