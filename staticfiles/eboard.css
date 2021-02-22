@@ -1,0 +1,182 @@
+body {
+    color: #6e6e6e;
+}
+h2 {
+    font-size: 2.8vh;
+    line-height: 140%;
+}
+h3 {
+    font-size: 2.4vh;
+    text-align: justify;
+    line-height: 140%;
+}
+#header_img {
+    min-width: 100vw;
+    min-height: 25vh;
+    top: 0;
+    position: relative;
+}
+#landing_section {
+    align-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+#landing_section td {
+    padding: 0;
+}
+#landing_section tr:nth-child(1), #landing_section tr:nth-child(3) {
+    height: fit-content;
+}
+#page_description_section td {
+    vertical-align: center;
+    width: 25vw;
+}
+#page_description_section td:nth-child(2) {
+    width: 50vw;
+    text-align: center;
+}
+
+#page_description_section td:nth-child(1) {
+    text-align: right;
+    vertical-align: center;
+}
+
+#page_description_section td h2 {
+    padding-top: 10%;
+}
+#page_description_section td:nth-child(3) {
+    text-align: left;
+}
+
+#gif {
+    max-width: 20vh;
+    height: auto;
+}
+
+.line_img {
+    height: 85%;
+    width: auto;
+    padding: 0 5vw;
+}
+
+.flipped {
+    transform: scale(-1, -1);
+}
+#e-board_roster {
+    width: 90vw;
+    margin-left: 5vw;
+}
+#e-board_roster img, #alumni_outreach_team img{
+    max-height: 40vh;
+    min-height: 15vh;
+    width: auto;
+}
+#e-board_roster tr {
+    border-top: lightgray 1px solid;
+}
+#e-board_roster td {
+    padding-top: 3%;
+    vertical-align: top;
+}
+#e-board_roster h2, #alumni_outreach_team h2, .pronouns {
+    text-align: center;
+    font-weight: bolder;
+    color: #5b5b5b;
+}
+.role {
+    font-style: italic;
+    font-weight: normal;
+}
+.pronouns {
+    margin: 1vh 25vh;
+    font-size: smaller;
+}
+.profile_smaller_section {
+    text-align: center;
+    padding: 0;
+    width: 100%;
+}
+.profile_smaller_section h3 {
+    background-color: #f6f6f6;
+    padding-left: 5%;
+    width: 100%;
+    line-height: 7vh;
+    display: inline-block;
+}
+#alumni_outreach_team .profile_smaller_section{
+    padding: 0;
+}
+.profile_smaller_section a, .profile_smaller_section a:visited {
+    color: #5b5b5b;
+    text-decoration: none;
+    font-size: smaller;
+}
+.profile_smaller_section a:hover {
+    text-decoration: underline;
+}
+.profile_smaller_section img, .profile_bigger_section img {
+    margin-bottom: 5%;
+}
+.profile_bigger_section {
+    text-align: center;
+}
+.profile_smaller_section.left_col {
+    display: none;
+}
+#alumni_outreach_team th h2{
+    background-color:#DCEBF1;
+    line-height: 170%;
+}
+.outreach_team_member {
+    vertical-align: top;
+}
+td {
+    display: inline-block;
+}
+#e-board_roster .profile_smaller_section img {
+    display: none;
+}
+.outreach_team_email_links_row {
+    display: none;
+}
+#alumni_outreach_team {
+    border-spacing: 5vw;
+    border-collapse: separate;
+    margin: 0;
+}
+/* For non mobile devices */
+@media only screen and (min-width: 1150px) {
+    td {
+        display: table-cell;
+    }
+    .outreach_team_member {
+        width: 33%;
+    }
+    .profile_bigger_section {
+        width: 60%;
+    }
+    .profile_bigger_section img{
+        display: none;
+    }
+    .profile_smaller_section {
+        padding: 0 0 0 4%;
+    }
+    #e-board_roster .profile_smaller_section img {
+        display: inline-block;
+    }
+    .pronouns {
+        margin: 1vh 48vh;
+    }
+    #alumni_outreach_team .pronouns {
+        margin: 1vh 23vh;
+    }
+    .outreach_team_email_links_row {
+        display: table-row;
+    }
+    .outreach_team_member .mobile {
+        display: none;
+    }
+    #alumni_outreach_team {
+        border-spacing: 2vw;
+    }
+}

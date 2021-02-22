@@ -1,0 +1,40 @@
+body {
+    /*background-image: url("calendar_background.png");*/
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /*background-color: #dbeef6;*/
+    line-height: 2.7vmin;
+}
+
+#submitEventBlock {
+    position: absolute;
+    bottom: 5vh;
+    right: 4vw;
+    width: 20vw;
+    padding: 1.5vw 1.5vw;
+    background-color: #feadff;
+    border-radius: 5%;
+    color: #004aad;
+    text-align: justify;
+    font-weight: bold;
+    line-height: 2.7vmin;
+    font-size: 1.2vw;
+    border: #004aad 0.1vmin solid;
+
+}
+
+#submitEventBlock .btn {
+    background-color: #d9eeef;
+    font-size: 80%;
+    color: #004aad;
+    border: #004aad 0.1vmin solid;
+    font-weight: bold;
+    padding: 0.5vh 1.5vw;
+    margin-left: 30%;
+    margin-top: 0.5vmax;
+    z-index: 300;
+
+}
+
+
