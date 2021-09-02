@@ -20,6 +20,11 @@ Speaker Series
 Calendar
 – Display a monthly calendar
 – Stop calendar from automatically scrolling
+- Hide "see more.." for events with no description
+
+Contact
+– Hide mailchimp credit bar at bottom
+
 General
 – Create a cooler loader
 – Put more photos throughout the site

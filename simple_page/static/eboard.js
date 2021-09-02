@@ -11,14 +11,14 @@ window.onload = function() {
         let eboard_roster_header = bigger_sections[counter].getElementsByTagName("h2")[0];
         let pronouns = bigger_sections[counter].getElementsByClassName("pronouns")[0];
         if (counter % 3 === 0) {
-            eboard_roster_header.style.backgroundColor = "#EAE4F2";
-            pronouns.style.backgroundColor = "#EAE4F2";
-        } else if (counter % 3 === 1) {
             eboard_roster_header.style.backgroundColor = "#f5dfeb";
             pronouns.style.backgroundColor = "#f5dfeb";
-        } else if (counter % 3 === 2) {
+        } else if (counter % 3 === 1) {
             eboard_roster_header.style.backgroundColor = "#DCEBF1";
             pronouns.style.backgroundColor = "#DCEBF1";
+        } else if (counter % 3 === 2) {
+            eboard_roster_header.style.backgroundColor = "#EAE4F2";
+            pronouns.style.backgroundColor = "#EAE4F2";
         }
     }
 
